@@ -170,7 +170,7 @@ def main():
 
     print("Exporting inputs ...")
     for digit in Exploration.all_inputs:
-        digit.export(all=True)
+        digit.export(all=False)
     
     print("Done")
 

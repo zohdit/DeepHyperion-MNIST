@@ -49,15 +49,15 @@ BITMAP_THRESHOLD = float(os.getenv('DH_BITMAP_THRESHOLD', '0.5'))
 DISTANCE_SEED         = float(os.getenv('DH_DISTANCE_SEED', '5.0'))
 DISTANCE         = float(os.getenv('DH_DISTANCE', '2.0'))
 
-FEATURES             = os.getenv('FEATURES', ["Moves", "Bitmaps"])
+# FEATURES             = os.getenv('FEATURES', ["Moves", "Bitmaps"])
 NUM_CELLS           = int(os.getenv("NUM_CELLS", '25'))
 # FEATURES             = os.getenv('FEATURES', ["Orientation","Bitmaps"])
-# FEATURES             = os.getenv('FEATURES', ["Orientation","Moves"])
+FEATURES             = os.getenv('FEATURES', ["Orientation","Moves"])
 
 TSHD_TYPE             = os.getenv('TSHD_TYPE', '1') # 1: threshold on vectorized-rasterized seed, use DISTANCE = 2
 
 
-NAME = "dh_moves-bitmaps"
+NAME = "dh_orientation-moves"
 # RUN = 1
 
 # # TODO Mayber there's a better way to handle this
